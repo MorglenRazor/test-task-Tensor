@@ -12,7 +12,4 @@
 <h2>3. Перехожим в папку test-automation через терминал или командную строку</h2>
     
     Пишем в терминале или командной строке:
-        для запуска первого теста:
-            behave -i features/search_in_yandex.feature
-        для запуска второго теста:
-            behave -i features/pictures_on_yandex.feature
+        behave -f allure_behave.formatter:AllureFormatter -o reports/ ./features ; allure serve reports/
